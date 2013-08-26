@@ -1,0 +1,26 @@
+{
+  "type" : "kafka",
+  "kafka" : {
+    "zkaddress" : "ZOOKEEPER",
+    "topic" : "TOPIC",
+    "groupid" : "GROUPID",
+    "fetch_size" : 512000,
+    "zk_session_timeout" : 1000,
+    "zk_sync_time" : 200
+  },
+  "index" : {
+    "name" : "TOPIC",
+    "bulk_size" : BULKSIZE,
+    "bulk_timeout" : "1000ms",
+    "ordered" : true,
+    "ttl": "1209600000ms"
+  },
+  "custom" : {
+    "ttl_field" : "time",
+    "daily_index" : true,
+    "daily_index_field" : "time",
+    "type_field" : "from",
+    "uid_field" : "uid",
+    "statsd" : "STATSD"
+  }
+}
