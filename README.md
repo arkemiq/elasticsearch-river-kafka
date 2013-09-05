@@ -18,7 +18,7 @@ The Kafka River plugin allows index bulk format messages into elasticsearch.
 
         cd $ELASTICSEARCH_HOME
         ./bin/plugin -remove kafka-river
-        ./bin/plugin --install kafka-river --url file://$PLUGIN_PATH 
+        ./bin/plugin -install kafka-river -url file://$PLUGIN_PATH 
 
 4. If it is not worked, restart elasticsearch server.
 
